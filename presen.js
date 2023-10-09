@@ -1,22 +1,27 @@
-const newP = document.createElement("p");
-newP.innerText = "Thank you!";
-document.body.appendChild(newP);
+const btn8 = document.getElementById("btn8");
+const btn8Text = document.getElementById("btn8-text");
 
-//--------wani-------------
-let gatorsCount = 0;
-function getCount() {
-    //数字を取得
-    let strGator = "";
-    gatorsCount = document.getElementsByTagName("input")[0].value;
-    console.log(gatorsCount);
-    for (let i = 0; i < gatorsCount; i++){
-        strGator += "🐊" 
-    }
-    console.log(strGator);
-    let blueSquare = document.getElementById("blueSquare");
-    blueSquare.innerText = strGator;
-}
-//ボタンの取得
-const getButton = document.getElementById("button1");
-getButton.addEventListener("click", getCount)
-//----------------------------
+btn8.addEventListener("click", () => {
+    btn8Text.classList.toggle("hidden");
+});
+
+const btn9 = document.getElementById("btn9");
+const btn9Text = document.getElementById("btn9-text");
+
+btn9.addEventListener("click", () => {
+    btn9Text.classList.toggle("hidden");
+});
+
+const btn10 = document.getElementById("btn10");
+const btn10Text = document.getElementById("btn10-text");
+
+btn10.addEventListener("click", () => {
+    btn10Text.classList.toggle("hidden");
+});
+
+const btn11 = document.getElementById("btn11");
+const btn11Text = document.getElementById("btn11-text");
+
+btn11.addEventListener("click", () => {
+    btn11Text.classList.toggle("hidden");
+});
